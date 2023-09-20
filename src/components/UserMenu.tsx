@@ -2,6 +2,7 @@ import React from 'react'
 import Cart from './Cart'
 import Currecncy from './Currency'
 import User from './User'
+import Search from './Search'   
 
 const UserMenu=()=>{
     return(
@@ -10,7 +11,7 @@ const UserMenu=()=>{
             <Cart />
             <Currecncy />
             <User />
-            <Cart />
+            <Search />
 
         </div>
     )
