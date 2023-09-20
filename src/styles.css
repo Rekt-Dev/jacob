@@ -336,14 +336,33 @@
   
   .tickers-internal {
     padding: 10px;
-    margin: 5px;
+    margin: 3rem;
     border: 2px solid #1c6ea4;
-    border-radius: 10px;
-    height: 6rem;
-    width: 5rem;
+    border-radius: 20px;
+    height: 10rem;
+    width: 20rem;
     font-size: 16px;
     box-shadow: 9px 9px 10px 10px #03000f;
     font-size: 1rem;
     box-shadow: 2px 2px 3px 3px #2c3f6d;
   }
   
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    max-width: 100%; /* Limit the container width to the viewport width */
+  }
+  
+  .flex-item {
+    flex: grow ; /* Distribute available space equally among items */
+    margin: 10px; /* Add some spacing between items */
+    padding: 9px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px #03000f;
+    width: 12rem;
+    height: 10rem;
+
+
+    /* You can adjust the max-width and margin as needed */
+  }
