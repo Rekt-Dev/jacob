@@ -3,11 +3,11 @@ import Cart from './Cart'
 import Currecncy from './Currency'
 import User from './User'
 import Search from './Search'   
+import '../styles.css'
 
 const UserMenu=()=>{
     return(
-        <div>
-            <h2>UserMenu</h2>
+        <div className='flex'>
             <Cart />
             <Currecncy />
             <User />

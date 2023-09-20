@@ -203,22 +203,24 @@
   }
   
   .Header {
-    border: 3px solid #1c5ac3;
     color: blue;
     justify-content: center;
     align-items: center;
     text-shadow: 2px 4px 4px #1c6ea4;
     text-align: center;
     border-radius: 3rem;
-    margin: 12px;
+    margin: 2rem;
     color: white;
-    padding: 2px;
   }
   
   .flexRow {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    image {
+      width: 10%;
+      height: 10%;
+    }
   }
   .flexColumn {
     display: flex;
@@ -356,13 +358,35 @@
   
   .flex-item {
     flex: grow ; /* Distribute available space equally among items */
+    margin: 4rem; /* Add some spacing between items */
+    padding: 12px;
+    box-shadow: 4px 4px 4px 4px #03000f;
+    width: auto;
+    height: auto;
+
+
+    /* You can adjust the max-width and margin as needed */
+  }
+
+  .flex-item2 {
+    flex: grow ; /* Distribute available space equally among items */
     margin: 10px; /* Add some spacing between items */
     padding: 9px;
     border-radius: 20px;
     box-shadow: 4px 4px 4px 4px #03000f;
     width: 12rem;
     height: 10rem;
+  }
+  .flex-item3 {
+    flex: grow ; /* Distribute available space equally among items */
+    margin: 10px; /* Add some spacing between items */
+    padding: 9px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px #03000f;
+    width: max-content;
+    height: 10rem;
+  }
 
-
-    /* You can adjust the max-width and margin as needed */
+  .Header{
+    padding: 1rem;
   }

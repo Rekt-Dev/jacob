@@ -1,9 +1,11 @@
 import React from 'react'
-
+import search from '../assets/search.png'
 const Search=()=>{
     return(
         <div>
-            <h1>Seacrh</h1>
+
+            <img src={search} alt="Search" />
+
         </div>
     )
 } 

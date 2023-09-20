@@ -1,9 +1,11 @@
 import React from 'react'
-
+import user from '../assets/user.png'
 const User=()=>{
     return(
         <div>
-            <h1>User</h1>
+
+<img src={user} alt="User" />
+
         </div>
     )
 } 

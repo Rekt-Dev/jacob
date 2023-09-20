@@ -5,7 +5,7 @@ import UserMenu from "./UserMenu";
 import Logo from "./Logo";
 const Header: React.FC = () => {
     return (
-      <div>
+      <div className=" Header">
         <UserMenu />
         <Logo />
 <SiteMenu />
