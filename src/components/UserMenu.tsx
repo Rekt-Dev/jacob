@@ -7,7 +7,7 @@ import Search from './Search'
 const UserMenu=()=>{
     return(
         <div>
-            <h1>UserMenu</h1>
+            <h2>UserMenu</h2>
             <Cart />
             <Currecncy />
             <User />

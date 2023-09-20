@@ -9,7 +9,7 @@ import Item from './Item'
 function App() {
   return (
     <div>
-      666
+      <UserMenu />
 
       <Item />
       <Item />
@@ -19,9 +19,10 @@ function App() {
       <Item />
       <Item />
       <Item />
-      <Cart />
-      <UserMenu />
-666
+      <Item />
+      <Item />
+      <Item />
+      <Item />
     </div>
   );
 }
