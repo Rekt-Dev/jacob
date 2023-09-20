@@ -390,3 +390,36 @@
   .Header{
     padding: 1rem;
   }
+  /* Menu.css */
+
+/* Menu.css */
+
+.menu {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  background-color: #fff; /* White background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Minimal drop shadow */
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #000; /* Black text color */
+  font-weight: bold;
+}
+
+.menu-item a:hover {
+  color: #555; /* Dark gray text color on hover */
+}
