@@ -394,14 +394,14 @@
 
 /* Menu.css */
 
+/* Menu.css */
+
 .menu {
   position: absolute;
-  top: 3rem;
-  right: 3rem;
-  background-color: #fff; /* White background */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Minimal drop shadow */
+  top: 30px; /* Adjust the top value to move the menu down */
+  right: 30px; /* Adjust the right value to move the menu from the right side */
+  font-size: 120%; /* Increase font size by 20% */
+  padding: 15px; /* Increase padding for spacing */
 }
 
 .menu-list {
@@ -411,7 +411,7 @@
 }
 
 .menu-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Increase margin for spacing */
 }
 
 .menu-item a {
