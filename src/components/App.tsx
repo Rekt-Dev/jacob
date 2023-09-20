@@ -6,51 +6,21 @@ import User from './User'
 import UserMenu from './UserMenu';
 import Item from './Item';
 import  '../styles.css';
+import Header from './Header';
 
 function App() {
   return (<>  
 
-    <div className=''>
-      <UserMenu />
+<div className='Header '>
+<Header />
 </div>
      <div className=' flex-container  '>
-
-<div className='flex-item '>
-      <Item />
-</div> 
-<div className='flex-item '>
-      <Item />
-</div> <div className='flex-item '>
-      <Item />
       
-</div> <div className='flex-item '>
-      <Item />
-</div> <div className='flex-item '>
+  
+<div className='flex-item '>
       <Item />
 </div> 
-<div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-</div> <div className='flex-item'>
-      <Item />
-      </div>
+
 </div>
     </>
   );

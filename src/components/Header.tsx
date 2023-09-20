@@ -1,11 +1,14 @@
-import LOGO from "../assets/logo.svg";
+//import Logo from "../assets/JacobLogo.png";
+import smallerLogo from "../assets/smallerLogo.svg";
+import SiteMenu from "./SiteMenu";
+import UserMenu from "./UserMenu";
+import Logo from "./Logo";
 const Header: React.FC = () => {
     return (
       <div>
-        <header>
-          <img src={LOGO} alt="Logo" />
-        </header>
-        {/* The rest of your component content */}
+        <UserMenu />
+        <Logo />
+<SiteMenu />
       </div>
     );
   };
