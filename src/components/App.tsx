@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import '../App.css';
 import Cart from './Cart'
 import Currency from './Currency'
@@ -42,7 +44,9 @@ function App() {
                 </div>
             );
           }
-  return (<>  
+  return (
+  <Router>
+  <>  
 
 <div className='Header '>
 <Header />
@@ -57,6 +61,7 @@ function App() {
 
 </div>
     </>
+    </Router>
   );
 }
 

@@ -9,13 +9,13 @@ const SiteMenu=()=>{
       <ul className="menu-list">
 
         <li className="menu-item">
-          <Link to="/collections">Collections</a>
+          <Link to="/collections">Collections</Link>
           </li>
         <li className="menu-item">
-          <Link to="/accessories">Accessories</a>
+          <Link to="/accessories">Accessories</Link>
           </li>
         <li className="menu-item">
-          <Link to="/accessories">HardGoods</a>
+          <Link to="/hardgoods">HardGoods</Link>
           </li>
 
       </ul>
