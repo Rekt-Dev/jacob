@@ -9,7 +9,6 @@ const Accessories: React.FC<AccessoriesProps> = ({ onClickCallback }) => {
   return (
     <div>
       <Link to="/accessories" onClick={onClickCallback}>
-        Accessories Link
       </Link>
       <div className=" ">
         Accessories Page

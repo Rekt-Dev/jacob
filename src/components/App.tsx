@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Collections from './Collections';
-import Accessories from './Accesories'; // Correct the import name
+import Accessories from './Accessories'; // Correct the import name
 import Hardgoods from './Hardgoods';
 import '../App.css';
 import Cart from './Cart';
