@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import Collections from './Collections';
+import Accessories from './Accesories';
+import Hardgoods from './Hardgoods';
 import '../App.css';
 import Cart from './Cart'
 import Currency from './Currency'
