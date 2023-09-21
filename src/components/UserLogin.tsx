@@ -1,8 +1,8 @@
-const Collections: React.FC = () => {
+const UserLogin: React.FC = () => {
     return (
       <div className=" ">
 User Login Page      </div>
     );
   };
   
-  export default Collections;
+  export default UserLogin;

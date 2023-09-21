@@ -12,6 +12,7 @@ import Item from './Item';
 import '../styles.css';
 import Header from './Header';
 import AssetGallery from './AssetGallery';
+import UserLogin from './UserLogin';
 
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(true);
@@ -28,6 +29,8 @@ function App() {
             <Route path="/collections" element={<Collections />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/hardgoods" element={<Hardgoods />} />
+            <Route path="/UserLogin" element={<UserLogin />} />
+
           </Routes>
         </div>
         {showAssetGallery && (
@@ -38,6 +41,7 @@ function App() {
         <div className=' flex-container  '>
           {/* Additional content for your app */}
         </div>
+        <UserLogin />
       </>
     </Router>
   );
