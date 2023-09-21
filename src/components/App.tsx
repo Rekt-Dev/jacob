@@ -23,7 +23,6 @@ function App() {
         <div className='Header '>
           <Header />
           <Routes>
-            {/* Define a default route for the home page */}
             <Route path="/" element={<Home />} />
 
             <Route path="/collections" element={<Collections />} />
