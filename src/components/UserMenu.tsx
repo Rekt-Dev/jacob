@@ -7,7 +7,7 @@ import '../styles.css'
 
 const UserMenu=()=>{
     return(
-        <div className='menu'>
+        <div className=''>
             <Cart />
             <User />
             <Search />
