@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Collections from './Collections';
-import Accessories from './Accesories';
+import Accessories from './Accesories'; // Correct the import name
 import Hardgoods from './Hardgoods';
 import '../App.css';
 import Cart from './Cart';
@@ -17,6 +17,10 @@ import UserLogin from './UserLogin';
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(true);
 
+  const handleAssetGalleryToggle = () => {
+    setShowAssetGallery(false);
+  };
+
   return (
     <Router>
       <>
@@ -25,11 +29,19 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
 
-            <Route path="/collections" element={<Collections />} />
-            <Route path="/accessories" element={<Accessories />} />
-            <Route path="/hardgoods" element={<Hardgoods />} />
-            <Route path="/UserLogin" element={<UserLogin />} />
-
+            <Route
+              path="/collections"
+              element={<Collections onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+            />
+            <Route
+              path="/accessories"
+              element={<Accessories onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+            />
+            <Route
+              path="/hardgoods"
+              element={<Hardgoods onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+            />
+            <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} /> {/* Pass the callback */}
           </Routes>
         </div>
         {showAssetGallery && (
@@ -40,7 +52,7 @@ function App() {
         <div className=' flex-container  '>
           {/* Additional content for your app */}
         </div>
-        <UserLogin />
+        <UserLogin onClickCallback={handleAssetGalleryToggle} /> {/* Pass the callback */}
       </>
     </Router>
   );

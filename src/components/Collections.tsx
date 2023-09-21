@@ -1,9 +1,21 @@
-const Collections: React.FC = () => {
-    return (
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface CollectionsProps {
+  onClickCallback: () => void;
+}
+
+const Collections: React.FC<CollectionsProps> = ({ onClickCallback }) => {
+  return (
+    <div>
+      <Link to="/collections" onClick={onClickCallback}>
+        Collections Link
+      </Link>
       <div className=" ">
         Collectionssssssssssssssss Page
       </div>
-    );
-  };
-  
-  export default Collections;
+    </div>
+  );
+};
+
+export default Collections;

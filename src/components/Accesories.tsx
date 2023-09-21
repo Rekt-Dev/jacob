@@ -1,9 +1,21 @@
-const Accessories: React.FC = () => {
-    return (
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface AccessoriesProps {
+  onClickCallback: () => void;
+}
+
+const Accessories: React.FC<AccessoriesProps> = ({ onClickCallback }) => {
+  return (
+    <div>
+      <Link to="/accessories" onClick={onClickCallback}>
+        Accessories Link
+      </Link>
       <div className=" ">
-        Axsrz page
+        Accessories Page
       </div>
-    );
-  };
-  
-  export default Accessories;
+    </div>
+  );
+};
+
+export default Accessories;

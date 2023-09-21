@@ -1,9 +1,21 @@
-const Hardgoods: React.FC = () => {
-    return (
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface HardgoodsProps {
+  onClickCallback: () => void;
+}
+
+const Hardgoods: React.FC<HardgoodsProps> = ({ onClickCallback }) => {
+  return (
+    <div>
+      <Link to="/hardgoods" onClick={onClickCallback}>
+        Hardgoods Link
+      </Link>
       <div className=" ">
-        hardgoods page
+        Hardgoods Page
       </div>
-    );
-  };
-  
-  export default Hardgoods;
+    </div>
+  );
+};
+
+export default Hardgoods;
