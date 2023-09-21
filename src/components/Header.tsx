@@ -5,9 +5,10 @@ import UserMenu from "./UserMenu";
 import Logo from "./Logo";
 const Header: React.FC = () => {
     return (
-      <div className=" Header">
+      <div className=" Header flex">
+                <Logo />
+
         <UserMenu />
-        <Logo />
 <SiteMenu />
       </div>
     );

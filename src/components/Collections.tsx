@@ -1,7 +1,7 @@
 const Collections: React.FC = () => {
     return (
       <div className=" ">
-        Collections Page
+        Collectionssssssssssssssss Page
       </div>
     );
   };
