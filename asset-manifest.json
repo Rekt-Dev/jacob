@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jacob/static/css/main.2959685e.css",
-    "main.js": "/jacob/static/js/main.20b088e5.js",
+    "main.css": "/jacob/static/css/main.2897855b.css",
+    "main.js": "/jacob/static/js/main.1f8a2256.js",
     "static/js/787.bba37a36.chunk.js": "/jacob/static/js/787.bba37a36.chunk.js",
     "static/media/bb17.png": "/jacob/static/media/bb17.85b29c1cc32025c74d04.png",
     "static/media/bb7.png": "/jacob/static/media/bb7.85b29c1cc32025c74d04.png",
@@ -32,12 +32,12 @@
     "static/media/bb15.png": "/jacob/static/media/bb15.0a1cc2643e7160eb7cdf.png",
     "static/media/bb5.png": "/jacob/static/media/bb5.0a1cc2643e7160eb7cdf.png",
     "index.html": "/jacob/index.html",
-    "main.2959685e.css.map": "/jacob/static/css/main.2959685e.css.map",
-    "main.20b088e5.js.map": "/jacob/static/js/main.20b088e5.js.map",
+    "main.2897855b.css.map": "/jacob/static/css/main.2897855b.css.map",
+    "main.1f8a2256.js.map": "/jacob/static/js/main.1f8a2256.js.map",
     "787.bba37a36.chunk.js.map": "/jacob/static/js/787.bba37a36.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2959685e.css",
-    "static/js/main.20b088e5.js"
+    "static/css/main.2897855b.css",
+    "static/js/main.1f8a2256.js"
   ]
 }
