@@ -8,9 +8,7 @@ interface HardgoodsProps {
 const Hardgoods: React.FC<HardgoodsProps> = ({ onClickCallback }) => {
   return (
     <div>
-      <Link to="/hardgoods" onClick={onClickCallback}>
-        Hardgoods Link
-      </Link>
+  
       <div className=" ">
         Hardgoods Page
       </div>

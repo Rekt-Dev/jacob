@@ -18,6 +18,8 @@ const SiteMenu=()=>{
           <Link to="/hardgoods">HardGoods</Link>
           </li>
 
+          
+
       </ul>
     </nav>
         </div>

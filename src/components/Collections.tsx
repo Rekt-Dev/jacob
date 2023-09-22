@@ -8,11 +8,9 @@ interface CollectionsProps {
 const Collections: React.FC<CollectionsProps> = ({ onClickCallback }) => {
   return (
     <div>
-      <Link to="/collections" onClick={onClickCallback}>
-        Collections Link
-      </Link>
+     
       <div className=" ">
-        Collectionssssssssssssssss Page
+        Collections Page
       </div>
     </div>
   );
