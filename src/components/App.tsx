@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'; // Remove BrowserRouter
 import Collections from './Collections';
-import Accessories from './Accessories'; // Correct the import name
+import Accessories from './Accessories';
 import Hardgoods from './Hardgoods';
+import HomePage from './HomePage';
+import ItemDetails from './ItemDetails';
 import '../App.css';
 import Cart from './Cart';
 import Currency from './Currency';
@@ -13,7 +15,7 @@ import '../styles.css';
 import Header from './Header';
 import AssetGallery from './AssetGallery';
 import UserLogin from './UserLogin';
-import HomePage from './HomePage';
+
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(true);
 
@@ -34,17 +36,18 @@ function App() {
 
             <Route
               path="/collections"
-              element={<Collections onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+              element={<Collections onClickCallback={handleAssetGalleryToggle} />}
             />
             <Route
               path="/accessories"
-              element={<Accessories onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+              element={<Accessories onClickCallback={handleAssetGalleryToggle} />}
             />
             <Route
               path="/hardgoods"
-              element={<Hardgoods onClickCallback={handleAssetGalleryToggle} />} // Pass the callback
+              element={<Hardgoods onClickCallback={handleAssetGalleryToggle} />}
             />
-            <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} /> {/* Pass the callback */}
+            <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} />
+            <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
           </Routes>
         </div>
         {showAssetGallery && (
@@ -55,14 +58,9 @@ function App() {
         <div className=' flex-container  '>
           {/* Additional content for your app */}
         </div>
-        <UserLogin onClickCallback={handleAssetGalleryToggle} /> {/* Pass the callback */}
+        <UserLogin onClickCallback={handleAssetGalleryToggle} />
       </>
   );
-}
-
-// Define a component for the home page
-function Home() {
-  return <div>Home Page</div>;
 }
 
 export default App;
