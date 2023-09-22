@@ -52,16 +52,12 @@
     font-weight: 500;
   }
   .User {
-    padding: 10px;
     margin: 10px;
-    border: 2px groove #1c6ea4;
-    box-shadow: 3px 3px 15px 12px #000000;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 10px;
     width: 14rem;
-    height: 20rem;
+    height: 4rem;
   }
   .justifyCenter {
     display: flex;
