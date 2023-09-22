@@ -21,13 +21,16 @@ function App() {
     setShowAssetGallery(false);
   };
 
+  const handleAssetGalleryToggleTrue = () => {
+    setShowAssetGallery(true);
+  }
+
   return (
-    <Router>
       <>
         <div className='Header '>
-          <Header />
+        <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue}/>} />
 
             <Route
               path="/collections"
@@ -54,7 +57,6 @@ function App() {
         </div>
         <UserLogin onClickCallback={handleAssetGalleryToggle} /> {/* Pass the callback */}
       </>
-    </Router>
   );
 }
 

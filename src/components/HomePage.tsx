@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import a from '../assets/a.jpg';
 import b from '../assets/b.jpg';
 import c from '../assets/c.jpg';
@@ -8,7 +8,11 @@ import f from '../assets/f.jpg';
 import fallbackImage from '../assets/fallback.jpg';
 import './HomePage.css';
 
-function HomePage() {
+interface HomePageProps {
+  onClickCallback: () => void;
+}
+
+function HomePage({ onClickCallback }: HomePageProps) {
   const [currentImage, setCurrentImage] = useState(0);
 
   const imageUrls = [a, b, c, d, e, f];
@@ -22,16 +26,6 @@ function HomePage() {
       prevImage === 0 ? imageUrls.length - 1 : prevImage - 1
     );
   };
-
-  useEffect(() => {
-    // Create an interval to switch images every 5 seconds
-    const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % imageUrls.length);
-    }, 5000);
-
-    // Clear the interval when the component unmounts
-    return () => clearInterval(intervalId);
-  }, [imageUrls]);
 
   return (
     <div>
