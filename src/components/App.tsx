@@ -13,7 +13,7 @@ import '../styles.css';
 import Header from './Header';
 import AssetGallery from './AssetGallery';
 import UserLogin from './UserLogin';
-
+import HomePage from './HomePage';
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(true);
 
@@ -27,7 +27,7 @@ function App() {
         <div className='Header '>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
 
             <Route
               path="/collections"

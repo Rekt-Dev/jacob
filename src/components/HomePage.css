@@ -1,0 +1,31 @@
+/* HomePage.css */
+
+/* Styles for the previous button */
+.button-prev {
+    background-color: #ff4081; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Margin between buttons */
+  }
+  
+  /* Styles for the next button */
+  .button-next {
+    background-color: #4caf50; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Hover effect for buttons */
+  .button-prev:hover,
+  .button-next:hover {
+    opacity: 0.8;
+  }
+  
