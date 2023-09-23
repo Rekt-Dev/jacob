@@ -15,12 +15,13 @@ import '../styles.css';
 import Header from './Header';
 import AssetGallery from './AssetGallery';
 import UserLogin from './UserLogin';
+import Insta from './Insta';
 
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(false);
 
   const handleAssetGalleryToggle = () => {
-    setShowAssetGallery(false);
+    setShowAssetGallery(true);
   };
 
   const handleAssetGalleryToggleTrue = () => {

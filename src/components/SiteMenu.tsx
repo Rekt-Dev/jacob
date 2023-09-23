@@ -7,6 +7,8 @@ interface SiteMenuProps {
 
 const SiteMenu: React.FC<SiteMenuProps> = ({ onClickCallback }) => {
   const handleItemClick = () => {
+    console.log('Menu item clicked'); // Add this line
+
     if (onClickCallback) {
       onClickCallback(true); // Set showAssetGallery to true
     }
