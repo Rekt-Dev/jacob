@@ -17,7 +17,7 @@ import AssetGallery from './AssetGallery';
 import UserLogin from './UserLogin';
 
 function App() {
-  const [showAssetGallery, setShowAssetGallery] = useState(true);
+  const [showAssetGallery, setShowAssetGallery] = useState(false);
 
   const handleAssetGalleryToggle = () => {
     setShowAssetGallery(false);
@@ -36,7 +36,7 @@ function App() {
 
             <Route
               path="/collections"
-              element={<Collections onClickCallback={handleAssetGalleryToggle} />}
+              element={<Collections onClickCallback={handleAssetGalleryToggleTrue} />}
             />
             <Route
               path="/accessories"
@@ -56,7 +56,6 @@ function App() {
           </div>
         )}
         <div className=' flex-container  '>
-          {/* Additional content for your app */}
         </div>
         <UserLogin onClickCallback={handleAssetGalleryToggle} />
       </>
