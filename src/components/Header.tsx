@@ -8,6 +8,7 @@ const Header: React.FC = () => {
 
   // Function to handle the onClick event and set showAssetGallery to true
   const handleAssetGalleryToggle = () => {
+    console.log('Asset gallery toggled'); // Add this line to log when the function is called
     setShowAssetGallery(true);
   };
 

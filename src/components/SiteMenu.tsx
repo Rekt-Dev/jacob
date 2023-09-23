@@ -10,7 +10,7 @@ const SiteMenu: React.FC<SiteMenuProps> = ({ onClickCallback }) => {
     console.log('Menu item clicked'); // Add this line
 
     if (onClickCallback) {
-      onClickCallback(true); // Set showAssetGallery to true
+      onClickCallback(false); // Set showAssetGallery to true
     }
   };
 

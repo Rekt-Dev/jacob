@@ -1,17 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 interface CollectionsProps {
   onClickCallback: () => void;
 }
 
 const Collections: React.FC<CollectionsProps> = ({ onClickCallback }) => {
+  // Function to handle the button click and trigger onClickCallback
+  const handleButtonClick = () => {
+    if (onClickCallback) {
+      onClickCallback(); // Call the callback function to show the AssetGallery
+    }
+  };
+
   return (
     <div>
-     
-      <div className=" ">
-        Collections Page
-      </div>
+      <h1>Collections Page</h1>
+      <p>This is the Collections page content.</p>
+      <button onClick={handleButtonClick}>Show Asset Gallery</button>
     </div>
   );
 };
