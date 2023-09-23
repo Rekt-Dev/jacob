@@ -1,31 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SiteMenu=()=>{
-    return(
-        <div>
-             <nav className="menu">
+interface SiteMenuProps {
+  onClickCallback: (value: boolean) => void;
+}
 
-      <ul className="menu-list">
+const SiteMenu: React.FC<SiteMenuProps> = ({ onClickCallback }) => {
+  const handleItemClick = () => {
+    if (onClickCallback) {
+      onClickCallback(true); // Set showAssetGallery to true
+    }
+  };
 
-        <li className="menu-item">
-          <Link to="/collections">Collections</Link>
+  return (
+    <div>
+      <nav className="menu">
+        <ul className="menu-list">
+          <li className="menu-item">
+            <Link to="/collections" onClick={handleItemClick}>
+              Collections
+            </Link>
           </li>
-        <li className="menu-item">
-          <Link to="/accessories">Accessories</Link>
+          <li className="menu-item">
+            <Link to="/accessories" onClick={handleItemClick}>
+              Accessories
+            </Link>
           </li>
-       
-           {/* <li className="menu-item">
-          <Link to="/hardgoods">HardGoods</Link>
-          </li>*/}
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-          
-
-      </ul>
-    </nav>
-        </div>
-    )
-} 
 export default SiteMenu;
-
-

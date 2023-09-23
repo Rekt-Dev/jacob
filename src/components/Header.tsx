@@ -1,18 +1,24 @@
-//import Logo from "../assets/JacobLogo.png";
-import smallerLogo from "../assets/smallerLogo.svg";
-import SiteMenu from "./SiteMenu";
-import UserMenu from "./UserMenu";
-import Logo from "./Logo";
+import React, { useState } from 'react';
+import SiteMenu from './SiteMenu';
+import UserMenu from './UserMenu';
+import Logo from './Logo';
+
 const Header: React.FC = () => {
-    return (
-      <div className=" Header ">
+  const [showAssetGallery, setShowAssetGallery] = useState(false);
 
-        <UserMenu />
-        <Logo />
-
-<SiteMenu />
-      </div>
-    );
+  // Function to handle the onClick event and set showAssetGallery to true
+  const handleAssetGalleryToggle = () => {
+    setShowAssetGallery(true);
   };
-  
-  export default Header;
+
+  return (
+    <div className="Header">
+      <UserMenu />
+      <Logo />
+      {/* Pass the handleAssetGalleryToggle function as onClickCallback */}
+      <SiteMenu onClickCallback={handleAssetGalleryToggle} />
+    </div>
+  );
+};
+
+export default Header;

@@ -33,7 +33,7 @@ export default function AssetGallery() {
     return (
           <div className='Header '>
           {imagesArray.map((image, index) => (
-            <img           style={{ width: '20rem', height: '20rem' }} // Set the desired width and height
+            <img           style={{ width: '20rem', height: '20rem' }} 
             key={index} src={image} alt={`Image ${index}`} />
           ))}
         </div>
