@@ -15,8 +15,7 @@ const Collections: React.FC<CollectionsProps> = ({ onClickCallback }) => {
   return (
     <div>
       <h1>Collections Page</h1>
-      <p>This is the Collections page content.</p>
-      <button onClick={handleButtonClick}>Show Asset Gallery</button>
+ 
     </div>
   );
 };
