@@ -14,9 +14,10 @@ const SiteMenu=()=>{
         <li className="menu-item">
           <Link to="/accessories">Accessories</Link>
           </li>
-        <li className="menu-item">
+       
+           {/* <li className="menu-item">
           <Link to="/hardgoods">HardGoods</Link>
-          </li>
+          </li>*/}
 
           
 
