@@ -397,6 +397,9 @@
   text-decoration: none; /* Remove default underline */
   transition: color 0.3s; /* Add a smooth color transition on hover */
 }
+.footer p {
+  font-size: 12px; /* Adjust the font size as needed */
+}
 
 /* Style for links on hover */
 .footer a:hover {
