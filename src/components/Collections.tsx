@@ -1,4 +1,5 @@
 import React from 'react';
+import AssetGallery from './AssetGallery';
 
 interface CollectionsProps {
   onClickCallback: () => void;
@@ -15,6 +16,7 @@ const Collections: React.FC<CollectionsProps> = ({ onClickCallback }) => {
   return (
     <div>
       <h1>Collections Page</h1>
+      <AssetGallery />
  
     </div>
   );
