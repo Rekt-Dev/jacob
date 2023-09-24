@@ -1,0 +1,24 @@
+/* Footer.css */
+
+/* Style for the parent container */
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-end; /* Push the footer content to the bottom */
+    align-items: center; /* Center horizontally */
+  }
+  
+  /* Style for the footer content */
+  .footer-container {
+    text-align: center;
+    margin-top: 20px; /* Add some space between sections */
+    margin-bottom: 20px; /* Add some space between sections */
+  }
+  
+  /* Style for the footer bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px; /* Add some space above the copyright notice */
+  }
+  

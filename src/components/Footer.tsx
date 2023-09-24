@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div className="footer-container" style={{ textAlign: 'center' }}>
+      <div className="footer-container">
         <div className="footer-section">
           <a href="/about-us">About Us</a>&nbsp;|&nbsp;
           <a href="/contact-us">Contact Us</a>&nbsp;|&nbsp;
@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
           <a href="/customer-support">Customer Support</a>
         </div>
       </div>
-      <div className="footer-bottom justifyCenter"> {/* Add justifyCenter class */}
-        <p>&copy; {new Date().getFullYear()} 0Fear Designs. All rights reserved.</p>
+      <div className="footer-bottom justifyCenter">
+        <p>&copy; {new Date().getFullYear()} <span className="smaller-text">0Fear Designs</span>. All rights reserved.</p>
       </div>
     </footer>
   );
