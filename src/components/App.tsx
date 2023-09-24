@@ -16,6 +16,7 @@ import Header from './Header';
 import AssetGallery from './AssetGallery';
 import UserLogin from './UserLogin';
 import Insta from './Insta';
+import Footer from './Footer';
 
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(false);
@@ -51,10 +52,13 @@ function App() {
             <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
           </Routes>
         </div>
+        <Footer />
+
         {showAssetGallery && (
           <div>
             <AssetGallery />
           </div>
+          
         )}
         <div className=' flex-container  '>
         </div>
