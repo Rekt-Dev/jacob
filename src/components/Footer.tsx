@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // You can style the footer using CSS or any other styling method.
+import './Footer.css';
 
 const Footer: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <a href="/customer-support">Customer Support</a>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom justifyCenter"> {/* Add justifyCenter class */}
         <p>&copy; {new Date().getFullYear()} 0Fear Designs. All rights reserved.</p>
       </div>
     </footer>
