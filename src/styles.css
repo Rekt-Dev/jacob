@@ -393,6 +393,7 @@
 /* Menu.css */
 .footer a {
   color: black; /* Change link color to black */
+  height: 100px;
   font-weight: 800; /* Make font weight twice as bold */
   text-decoration: none; /* Remove default underline */
   transition: color 0.3s; /* Add a smooth color transition on hover */

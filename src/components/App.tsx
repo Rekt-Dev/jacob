@@ -60,8 +60,7 @@ function App() {
           </div>
           
         )}
-        <div className=' flex-container  '>
-        </div>
+       
         <UserLogin onClickCallback={handleAssetGalleryToggle} />
       </>
   );
