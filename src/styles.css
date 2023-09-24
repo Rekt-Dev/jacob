@@ -391,6 +391,18 @@
 /* Menu.css */
 
 /* Menu.css */
+.footer a {
+  color: black; /* Change link color to black */
+  font-weight: 800; /* Make font weight twice as bold */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Style for links on hover */
+.footer a:hover {
+  color: #555; /* Dark gray text color on hover */
+  font-weight: 800; /* Retain the bold font weight on hover */
+}
 
 .menu {
   position: absolute;
