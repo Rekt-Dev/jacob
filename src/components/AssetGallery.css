@@ -10,8 +10,8 @@
   
   .hoverable-image:hover {
     /* Styles to apply when hovering */
-    border: 1px solid #007bff; /* Change border color, for example */
-    transform: scale(1.05); /* Increase the image size slightly */
+    border: 1px solid #001aff; /* Change border color, for example */
+    transform: scale(1.55); /* Increase the image size slightly */
     /* Add any other styles you want for the hover state */
   }
   
