@@ -25,3 +25,7 @@
     margin-top: 5px; /* Reduce the top margin */
     padding: 0; /* Remove the padding from the bottom part */
 }
+
+.smaller-text {
+    color: #333; /* Updated text color for better visibility */
+  }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom'; // Remove BrowserRouter
 import Collections from './Collections';
 import Accessories from './Accessories';
-import Hardgoods from './Hardgoods';
+import Terms from './Terms';
 import HomePage from './HomePage';
 import ItemDetails from './ItemDetails';
 import '../App.css';
@@ -45,13 +45,14 @@ function App() {
               element={<Accessories onClickCallback={handleAssetGalleryToggle} />}
             />
             <Route
-              path="/hardgoods"
-              element={<Hardgoods onClickCallback={handleAssetGalleryToggle} />}
+              path="/terms"
+              element={<Terms  />}
             />
             <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} />
             <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
           </Routes>
         </div>
+
         <Footer />
 
         {showAssetGallery && (

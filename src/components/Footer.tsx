@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <a href="/customer-support">Customer Support</a>
         </div>
       </div>
-      <div className="footer-bottom justifyCenter">
+      <div className="footer-bottom justifyCenter smaller-text">
         <p>&copy; {new Date().getFullYear()} <span className="smaller-text">0Fear Designs</span>. All rights reserved.</p>
       </div>
     </footer>
