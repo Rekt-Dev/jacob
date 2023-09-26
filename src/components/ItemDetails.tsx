@@ -5,6 +5,7 @@ interface ItemDetailsProps {
   onClickCallback: () => void;
 }
 
+
 const ItemDetails: React.FC<ItemDetailsProps> = ({ onClickCallback }) => {
   return (
     <div>

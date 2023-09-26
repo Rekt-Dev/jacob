@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './AssetGallery.css';
+
 import bb1 from '../assets/bb/bb1.png';
 import bb2 from '../assets/bb/bb2.png';
 import bb3 from '../assets/bb/bb3.png';
@@ -39,6 +41,8 @@ export default function AssetGallery() {
             }}
             src={image}
             alt={`Image ${index}`}
+            className="hoverable-image" // Add a class for CSS styling
+
           />
         </Link>
       ))}

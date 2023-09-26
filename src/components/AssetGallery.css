@@ -1,0 +1,17 @@
+/* styles.css */
+.hoverable-image {
+    /* Your default image styles here */
+    border: 0px solid #ccc;
+    margin: 10px;
+    /* Add any other styles you want for the default state */
+  
+    transition: all 0.2s ease; /* Transition all properties on hover */
+  }
+  
+  .hoverable-image:hover {
+    /* Styles to apply when hovering */
+    border: 1px solid #007bff; /* Change border color, for example */
+    transform: scale(1.05); /* Increase the image size slightly */
+    /* Add any other styles you want for the hover state */
+  }
+  
