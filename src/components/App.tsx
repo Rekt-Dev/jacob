@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom'; // Remove BrowserRouter
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Updated imports
+
 import Collections from './Collections';
 import Accessories from './Accessories';
 import Terms from './Terms';
@@ -27,43 +28,31 @@ function App() {
 
   const handleAssetGalleryToggleTrue = () => {
     setShowAssetGallery(true);
-  }
+  };
 
   return (
-      <>
-        <div className='Header '>
+    <BrowserRouter> {/* Wrap your entire component structure with BrowserRouter */}
+      <div className='Header '>
         <Header />
-          <Routes>
-            <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue}/>} />
+        <Routes>
+          <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue} />} />
+          <Route path="/collections" element={<Collections onClickCallback={handleAssetGalleryToggleTrue} />} />
+          <Route path="/accessories" element={<Accessories onClickCallback={handleAssetGalleryToggle} />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} />
+          <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
+        </Routes>
+      </div>
+      <Footer />
 
-            <Route
-              path="/collections"
-              element={<Collections onClickCallback={handleAssetGalleryToggleTrue} />}
-            />
-            <Route
-              path="/accessories"
-              element={<Accessories onClickCallback={handleAssetGalleryToggle} />}
-            />
-            <Route
-              path="/terms"
-              element={<Terms  />}
-            />
-            <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} />
-            <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
-          </Routes>
+      {showAssetGallery && (
+        <div>
+          <AssetGallery />
         </div>
+      )}
 
-        <Footer />
-
-        {showAssetGallery && (
-          <div>
-            <AssetGallery />
-          </div>
-          
-        )}
-       
-        <UserLogin onClickCallback={handleAssetGalleryToggle} />
-      </>
+      <UserLogin onClickCallback={handleAssetGalleryToggle} />
+    </BrowserRouter>
   );
 }
 

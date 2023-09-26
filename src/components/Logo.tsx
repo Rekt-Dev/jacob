@@ -9,7 +9,7 @@ const Logo = () => {
         <img
           src={logo}
           alt="Logo"
-          style={{ width: '18rem', height: '15rem', cursor: 'zoom-in' }}
+          style={{ width: '18rem', height: '15rem', cursor: 'pointer' }}
         />
       </Link>
     </div>

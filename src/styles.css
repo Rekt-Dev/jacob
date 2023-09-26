@@ -109,6 +109,12 @@
     height: 16rem;
     box-shadow: 3px 3px 10px 10px #2c3f6d;
   }
+  .terms-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will center the content vertically as well */
+  }
   
   .Goi {
     padding: 10px;
@@ -117,6 +123,14 @@
     width: 16rem;
     height: 16rem;
     box-shadow: 3px 3px 10px 10px #2c3f6d;
+  }
+  .lol{
+width:65%;
+display: flex;
+flex-direction: row;
+  justify-content: center;
+  border:2px solid #1c6ea4;
+  text-align: center;
   }
   .Liquidations {
     padding: 10px;
