@@ -45,7 +45,7 @@ function HomePage({ onClickCallback }: HomePageProps) {
   }, []);
 
   return (
-    <div className='container'>
+    <div className='container justifyCenter'>
       <button onClick={handleClickPrevious}>Previous</button>
       <img
         src={imageUrls[currentImage]}
