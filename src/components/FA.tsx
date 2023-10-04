@@ -12,14 +12,14 @@ const SocialMediaToolbar: React.FC = () => {
   return (
     <div className="social-media-toolbar justifyCenter social-media-icon">
       <a
-        href="https://www.facebook.com/yourpage"
+        href="https://www.facebook.com/jacoblegacy"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
       <a
-        href="https://twitter.com/yourhandle"
+        href="https://twitter.com/jacoblegacy"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -33,14 +33,14 @@ const SocialMediaToolbar: React.FC = () => {
         <FontAwesomeIcon icon={faInstagram} size="2x" shake />
       </a>
       <a
-        href="https://www.linkedin.com/in/yourprofile"
+        href="https://www.linkedin.com/in/jacoblegacy"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
       <a
-        href="https://www.youtube.com/yourchannel"
+        href="https://www.youtube.com/jacoblegacy"
         target="_blank"
         rel="noopener noreferrer"
       >

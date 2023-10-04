@@ -1,3 +1,4 @@
+// App.tsx
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header';
@@ -13,6 +14,7 @@ import UserLogin from './UserLogin';
 import FA from './FA';
 import Ofear from './Ofear';
 import ThemeToggle from './ThemeToggle'; // Import the ThemeToggle component
+import './ThemeStyles.css'; // Import the CSS for styling
 
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(false);
@@ -27,9 +29,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='Header '>
+      <div className={`Header ${showAssetGallery ? 'gallery-open' : ''}`}>
         <Header />
-        <ThemeToggle /> {/* Add the ThemeToggle component here */}
         <Routes>
           <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue} />} />
           <Route path="/collections" element={<Collections onClickCallback={handleAssetGalleryToggleTrue} />} />
@@ -45,10 +46,14 @@ function App() {
       <div className='justifyCenter'>
         <Ofear />
       </div>
+      <div className="justifyCenter">
+      <ThemeToggle /> {/* Add the ThemeToggle component here */}
+      </div>
       {showAssetGallery && (
         <div>
           <AssetGallery />
         </div>
+        
       )}
       <UserLogin onClickCallback={handleAssetGalleryToggle} />
     </BrowserRouter>

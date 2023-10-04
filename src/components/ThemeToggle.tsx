@@ -7,14 +7,12 @@ const ThemeToggle: React.FC = () => {
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
-    // You can save the theme preference in local storage or a state management system
+    // Toggle the body class to switch between themes
+    document.body.classList.toggle('dark', isDarkMode);
   };
 
   return (
-    <button
-      className={`theme-toggle-button ${isDarkMode ? 'dark' : 'light'}`}
-      onClick={toggleTheme}
-    >
+    <button className={`theme-toggle-button ${isDarkMode ? 'dark' : 'light'}`} onClick={toggleTheme}>
       {isDarkMode ? 'Light Mode' : 'Dark Mode'}
     </button>
   );

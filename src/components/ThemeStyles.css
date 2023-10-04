@@ -5,8 +5,8 @@
     --primary-text-color: #333333;
   
     /* Dark theme colors */
-    --dark-primary-bg-color: #333333;
-    --dark-primary-text-color: #ffffff;
+    --primary-bg-color-dark: #333333;
+    --primary-text-color-dark: #ffffff;
   }
   
   /* Common styles for both themes */
@@ -18,7 +18,45 @@
   
   /* Dark theme specific styles */
   body.dark {
-    background-color: var(--dark-primary-bg-color);
-    color: var(--dark-primary-text-color);
+    background-color: var(--primary-bg-color-dark);
+    color: var(--primary-text-color-dark);
+  }
+  
+  /* Add your additional styles for light and dark themes here */
+  
+  /* Example: Change the color of specific elements for the dark theme */
+  body.dark .header {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  /* Add this CSS to your ThemeStyles.css file or a separate CSS file */
+.theme-toggle-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .theme-toggle-button.dark {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: #555555;
+  }
+  
+  /* Optional: Add some margin to the button */
+  .theme-toggle-button-container {
+    margin: 10px;
+  }
+  
+  /* Example: Change the color of links for the dark theme */
+  body.dark a {
+    color: #00bfff; /* Light blue color for links in dark mode */
   }
   
