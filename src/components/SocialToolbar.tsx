@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
+
+const SocialToolbar=()=>{
+    return(
+        <div>
+            Social toolbar
+        </div>
+    )
+} 
+export default SocialToolbar;
 
 
-
-const UserLogin: React.FC<UserLoginProps> = ({ onClickCallback }) => {
-  return (
-    <div>
-      {/* Your UserLogin component content */}
-    </div>
-  );
-};
-
-export default UserLogin;
