@@ -14,7 +14,7 @@ const ItemDetails: React.FC<ItemDetailsProps> = () => {
   // Now, you can use itemIndex to fetch the corresponding item data from your array
 
   return (
-    <div>
+    <div className='justifyCenter '>
 <Item />
 
 
