@@ -23,14 +23,14 @@ const SocialMediaToolbar: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faTwitter} size="2x" spin4/>
+        <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a
         href="https://www.instagram.com/jacoblegacy_"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faInstagram} size="2x" shake/>
+        <FontAwesomeIcon icon={faInstagram} size="2x" shake />
       </a>
       <a
         href="https://www.linkedin.com/in/yourprofile"
