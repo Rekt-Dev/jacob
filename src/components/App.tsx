@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter> {/* Wrap your entire component structure with BrowserRouter */}
+    <BrowserRouter> 
       <div className='Header '>
 
         <Header />
@@ -42,6 +42,8 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/UserLogin" element={<UserLogin onClickCallback={handleAssetGalleryToggle} />} />
           <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
+          <Route path="/cart" element={<Cart />} />
+
         </Routes>
       </div>
       <FA />

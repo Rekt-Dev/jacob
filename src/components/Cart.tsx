@@ -26,6 +26,11 @@ const Cart: React.FC = () => {
 
   return (
     <div>
+           <div>
+<Link to="/Cart">
+<img src={cart} alt="User" />
+</Link>
+        </div>
       <ul>
         {cartItems.map(item => (
           <li key={item.id}>
