@@ -4,7 +4,7 @@ import logo from '../assets/JacobLogo.png';
 
 const Logo = () => {
   return (
-    <div>
+    <div className='container'>
       <Link to="/">
         <img
           src={logo}
