@@ -33,6 +33,7 @@ function App() {
   return (
     <BrowserRouter> {/* Wrap your entire component structure with BrowserRouter */}
       <div className='Header '>
+
         <Header />
         <Routes>
           <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue} />} />

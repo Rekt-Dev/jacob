@@ -26,7 +26,6 @@ const Cart: React.FC = () => {
 
   return (
     <div>
-      <h2>Skateboard Pants Cart</h2>
       <ul>
         {cartItems.map(item => (
           <li key={item.id}>
