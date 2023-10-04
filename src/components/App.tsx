@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Updated imports
-
+import FA from './FA';
 import Collections from './Collections';
 import Accessories from './Accessories';
 import Terms from './Terms';
@@ -44,6 +44,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <FA />
 
       {showAssetGallery && (
         <div>
