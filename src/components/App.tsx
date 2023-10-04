@@ -43,8 +43,8 @@ function App() {
           <Route path="/item-details" element={<ItemDetails onClickCallback={handleAssetGalleryToggle} />} />
         </Routes>
       </div>
-      <Footer />
       <FA />
+      <Footer />
 
       {showAssetGallery && (
         <div>

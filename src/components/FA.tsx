@@ -10,7 +10,7 @@ import {
 
 const SocialMediaToolbar: React.FC = () => {
   return (
-    <div className="social-media-toolbar justifyCenter">
+    <div className="social-media-toolbar justifyCenter social-media-icon">
       <a
         href="https://www.facebook.com/yourpage"
         target="_blank"

@@ -59,6 +59,10 @@
     width: 14rem;
     height: 4rem;
   }
+  .social-media-icon {
+    color: black; /* Set the desired color here */
+  }
+  
   .justifyCenter {
     display: flex;
     justify-content: center;
