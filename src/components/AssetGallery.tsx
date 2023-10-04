@@ -1,6 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './AssetGallery.css';
+
 
 import bb1 from '../assets/bb/bb1.png';
 import bb2 from '../assets/bb/bb2.png';
@@ -23,7 +21,16 @@ import bb18 from '../assets/bb/bb18.png';
 import bb19 from '../assets/bb/bb19.png';
 import bb20 from '../assets/bb/bb20.png';
 
-export default function AssetGallery() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './AssetGallery.css';
+
+
+interface AssetGalleryProps {
+  // Add any props if needed
+}
+
+const AssetGallery: React.FC<AssetGalleryProps> = () => {
   const imagesArray = [
     bb1, bb2, bb3, bb4, bb5, bb6, bb7, bb8, bb9, bb10,
     bb11, bb12, bb13, bb14, bb15, bb16, bb17, bb18, bb19, bb20
@@ -32,7 +39,7 @@ export default function AssetGallery() {
   return (
     <div className='Header'>
       {imagesArray.map((image, index) => (
-        <Link to="/item-details" key={index}>
+        <Link to={`/item-details/${index}`} key={index}>
           <img
             style={{
               width: '20rem',
@@ -41,11 +48,12 @@ export default function AssetGallery() {
             }}
             src={image}
             alt={`Image ${index}`}
-            className="hoverable-image" // Add a class for CSS styling
-
+            className="hoverable-image"
           />
         </Link>
       ))}
     </div>
   );
 }
+
+export default AssetGallery;
