@@ -8,7 +8,7 @@ const Item = () => {
     <Link to="/item-details" style={{ textDecoration: 'none' }}>
   <img
     src={pants}
-    alt="pants"
+    alt="JacobSkatePants"
     style={{
       width: 'auto',
       height: 'auto',
