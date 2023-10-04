@@ -1,0 +1,24 @@
+/* ThemeStyles.css */
+:root {
+    /* Light theme colors */
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #333333;
+  
+    /* Dark theme colors */
+    --dark-primary-bg-color: #333333;
+    --dark-primary-text-color: #ffffff;
+  }
+  
+  /* Common styles for both themes */
+  body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark theme specific styles */
+  body.dark {
+    background-color: var(--dark-primary-bg-color);
+    color: var(--dark-primary-text-color);
+  }
+  

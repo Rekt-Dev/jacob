@@ -12,6 +12,7 @@ import Cart from './Cart';
 import UserLogin from './UserLogin';
 import FA from './FA';
 import Ofear from './Ofear';
+import ThemeToggle from './ThemeToggle'; // Import the ThemeToggle component
 
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(false);
@@ -28,6 +29,7 @@ function App() {
     <BrowserRouter>
       <div className='Header '>
         <Header />
+        <ThemeToggle /> {/* Add the ThemeToggle component here */}
         <Routes>
           <Route path="/" element={<HomePage onClickCallback={handleAssetGalleryToggleTrue} />} />
           <Route path="/collections" element={<Collections onClickCallback={handleAssetGalleryToggleTrue} />} />
