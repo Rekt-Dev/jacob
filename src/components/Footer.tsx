@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="footer-bottom justifyCenter smaller-text">
-        <p>&copy; {new Date().getFullYear()} <span className="smaller-text">0Fear Designs</span>. All rights reserved.</p>
+        
       </div>
     </footer>
   );

@@ -1,3 +1,4 @@
+import Ofear from './Ofear'; 
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Updated imports
 import FA from './FA';
@@ -45,10 +46,14 @@ function App() {
           <Route path="/cart" element={<Cart />} />
 
         </Routes>
+        
       </div>
-      <FA />
       <Footer />
 
+      <FA />
+      <div className='justifyCenter'>
+<Ofear />
+</div>
       {showAssetGallery && (
         <div>
           <AssetGallery />
