@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className="Header">
+    <div className="Header ">
       <UserMenu />
       <Logo />
       {/* Pass the handleAssetGalleryToggle function as onClickCallback */}

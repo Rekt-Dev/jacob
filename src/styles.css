@@ -76,6 +76,9 @@ font-weight: 700;
     align-items: center;
     
   }
+  .padding{
+    padding: 4rem;
+  }
   .Tickers {
     padding: 10px;
     margin: 10px;
