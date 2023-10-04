@@ -37,7 +37,7 @@ const AssetGallery: React.FC<AssetGalleryProps> = () => {
   ];
 
   return (
-    <div className='Header'>
+    <div className=' 'style={{ maxWidth: '100%', overflowX: 'hidden' }}>
       {imagesArray.map((image, index) => (
         <Link to={`/item-details/${index}`} key={index}>
           <img

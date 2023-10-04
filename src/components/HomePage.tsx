@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import '../styles.css'
 
-// Import your image assets
 import a from '../assets/a.jpg';
 import b from '../assets/b.jpg';
 import c from '../assets/c.jpg';
@@ -45,7 +45,7 @@ function HomePage({ onClickCallback }: HomePageProps) {
   }, []);
 
   return (
-    <div>
+    <div className='container'>
       <button onClick={handleClickPrevious}>Previous</button>
       <img
         src={imageUrls[currentImage]}
