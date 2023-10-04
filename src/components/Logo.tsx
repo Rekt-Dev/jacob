@@ -4,7 +4,7 @@ import logo from '../assets/JacobLogo.png';
 
 const Logo = () => {
   return (
-    <div className='container'>
+    <div className='justifyCenter'>
       <Link to="/">
         <img
           src={logo}

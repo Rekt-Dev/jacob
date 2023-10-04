@@ -74,8 +74,15 @@ font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
     
   }
+
+  .overflowHidden{
+    overflow: hidden;
+  }
+  
   .padding{
     padding: 4rem;
   }
