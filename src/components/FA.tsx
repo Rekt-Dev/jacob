@@ -26,11 +26,11 @@ const SocialMediaToolbar: React.FC = () => {
         <FontAwesomeIcon icon={faTwitter} size="2x" spin4/>
       </a>
       <a
-        href="https://www.instagram.com/youraccount"
+        href="https://www.instagram.com/jacoblegacy"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <FontAwesomeIcon icon={faInstagram} size="2x" shake/>
       </a>
       <a
         href="https://www.linkedin.com/in/yourprofile"
