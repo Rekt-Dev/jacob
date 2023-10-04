@@ -78,13 +78,15 @@ font-weight: 700;
     height: 100%; /* Adjust the height as needed */
     
   }
-
+.padding{
+    padding: 4rem 
+}
   .overflowHidden{
     overflow: hidden;
   }
   
   .padding{
-    padding: 4rem;
+    padding: 1.5rem;
   }
   .Tickers {
     padding: 10px;
