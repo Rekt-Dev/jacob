@@ -1,7 +1,7 @@
 // Cart.tsx
-
+import cart from '../assets/cart.png';
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 interface SkateboardPants {
   id: number;
   name: string;

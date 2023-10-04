@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Updated imports
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Updated imports
 import FA from './FA';
 import Collections from './Collections';
 import Accessories from './Accessories';
