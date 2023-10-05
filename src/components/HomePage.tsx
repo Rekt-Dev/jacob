@@ -34,18 +34,16 @@ function HomePage({ onClickCallback }: HomePageProps) {
     );
   };
 
-  // Automatically switch to the next image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       handleClickNext();
     }, 5000);
 
-    // Cleanup the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className=' justifyCenter overflowHidden'>
+    <div className='  overflowHidden'>
       <button onClick={handleClickPrevious}>Previous</button>
       <img
         src={imageUrls[currentImage]}
