@@ -18,19 +18,13 @@ const SocialMediaToolbar: React.FC = () => {
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
+      
       <a
-        href="https://twitter.com/jacoblegacy"
+        href="https://wa.me/+972525224491        "
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-      </a>
-      <a
-        href="https://wa.me/0525224491        "
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a
         href="https://www.instagram.com/jacoblegacy_"
