@@ -24,7 +24,7 @@ const SocialMediaToolbar: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" bounce/>
       </a>
       <a
         href="https://www.instagram.com/jacoblegacy_"
