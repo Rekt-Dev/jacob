@@ -9,6 +9,11 @@ import e from '../assets/e.jpg';
 import f from '../assets/f.jpg';
 import g from '../assets/g.png';
 import h from '../assets/h.png';
+import i from '../assets/i.png';
+import j from '../assets/j.png';
+import k from '../assets/k.png';
+import l from '../assets/l.png';
+import m from '../assets/m.png';
 
 import fallbackImage from '../assets/fallback.jpg';
 
@@ -23,7 +28,7 @@ function HomePage({ onClickCallback }: HomePageProps) {
   const [currentImage, setCurrentImage] = useState(0);
 
   // Define an array of image URLs
-  const imageUrls = [a, b, c, d, e, f, g,h];
+  const imageUrls = [a, b, c, d, e, f, g,h,i,j,k,l,m];
 
   // Function to handle moving to the next image
   const handleClickNext = () => {
