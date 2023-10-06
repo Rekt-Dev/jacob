@@ -5,6 +5,7 @@ import a from '../assets/a.jpg';
 import b from '../assets/b.jpg';
 import c from '../assets/c.jpg';
 import d from '../assets/d.jpg';
+
 import e from '../assets/e.jpg';
 import f from '../assets/f.jpg';
 import g from '../assets/g.png';
@@ -45,7 +46,7 @@ function HomePage({ onClickCallback }: HomePageProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       handleClickNext();
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -53,7 +54,7 @@ function HomePage({ onClickCallback }: HomePageProps) {
   return (
     <div className='  overflowHidden'>
       <button onClick={handleClickPrevious}>Previous</button>
-      <img
+      <img className='carousel-image'
         src={imageUrls[currentImage]}
         alt={`Image ${currentImage + 1}`}
         onError={(e) => {

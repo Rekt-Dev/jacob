@@ -95,6 +95,10 @@ font-weight: 700;
     border: 1px solid #ccc;
   }
   }
+  .carousel-image {
+    max-width: 100%; /* Maximum width for images */
+    max-height:28rem; /* Maximum height for images */
+  }
   
   .padding{
     padding: 1.5rem;
