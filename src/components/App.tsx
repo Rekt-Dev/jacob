@@ -16,7 +16,7 @@ import Ofear from './Ofear';
 import ThemeToggle from './ThemeToggle'; // Import the ThemeToggle component
 import './ThemeStyles.css'; // Import the CSS for styling
 import SponsoredPros from './SponsoredPros';
-
+import ContactUs from './ContactUs';
 function App() {
   const [showAssetGallery, setShowAssetGallery] = useState(false);
 
@@ -41,6 +41,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/item-details/:index" element={<ItemDetails />} />
           <Route path="sponsored-pros" element={<SponsoredPros />} />
+          <Route path="/contact-us" element={<ContactUs />} />
 
         </Routes>
       </div>
