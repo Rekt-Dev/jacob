@@ -16,7 +16,7 @@ const SocialMediaToolbar: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faFacebook} size="2x" fade/>
+        <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
       
       <a
@@ -24,21 +24,21 @@ const SocialMediaToolbar: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faWhatsapp} size="2x" bounce/>
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" shake/>
       </a>
       <a
         href="https://www.instagram.com/jacoblegacy_"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faInstagram} size="2x" shake />
+        <FontAwesomeIcon icon={faInstagram} size="2x" fade />
       </a>
       <a
         href="https://www.linkedin.com/in/jacobs-legacy-skate-fashion-shop"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        <FontAwesomeIcon icon={faLinkedin} size="2x"shake />
       </a>
       <a
         href="https://www.youtube.com/jacoblegacy"
