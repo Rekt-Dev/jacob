@@ -44,7 +44,7 @@ const AssetGallery: React.FC<AssetGalleryProps> = () => {
             style={{
               width: '20rem',
               height: '20rem',
-              transition: 'background-color 0.2s ease',
+              transition: 'background-color 0.4s ease',
             }}
             src={image}
             alt={`Image ${index}`}

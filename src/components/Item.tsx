@@ -10,8 +10,8 @@ const Item = () => {
     src={pants}
     alt="JacobSkatePants"
     style={{
-      width: 'auto',
-      height: 'auto',
+      width: '20rem',
+      height: '20rem',
       transition: 'background-color 0.2s ease', // Add a transition for a smoother effect
     }}
   />
