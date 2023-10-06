@@ -5,7 +5,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
-  faYoutube,
+  faYoutube, faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 
 const SocialMediaToolbar: React.FC = () => {
@@ -20,6 +20,13 @@ const SocialMediaToolbar: React.FC = () => {
       </a>
       <a
         href="https://twitter.com/jacoblegacy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+      </a>
+      <a
+        href="https://wa.me/0525224491        "
         target="_blank"
         rel="noopener noreferrer"
       >
