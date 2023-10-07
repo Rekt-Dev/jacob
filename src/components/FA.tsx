@@ -5,7 +5,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
-  faYoutube, faWhatsapp
+  faYoutube, faWhatsapp 
 } from '@fortawesome/free-brands-svg-icons';
 
 const SocialMediaToolbar: React.FC = () => {
