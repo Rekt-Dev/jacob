@@ -27,7 +27,7 @@ function App() {
   const handleAssetGalleryToggleTrue = () => {
     setShowAssetGallery(true);
   };
-
+ 
   return (
     <BrowserRouter>
       <div className={`Header ${showAssetGallery ? 'gallery-open' : ''}`}>
